@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Task 5</title>
+</head>
+<body style="margin-left: 10px;margin-right: 10px">
+<form action="/task5/result" method="post">
+    <p class="fw-light">
+    <p class="fw-bold">Задание:</p>
+    166. Даны два двузначных числа А и В. Из этих чисел
+    составили 2 четырехзначных числа: первое число получили
+    путем написания сначала числа А, затем В.
+    Для получения второго числа сначала записали
+    число В, затем А. Найти числа А и В если известно,
+    что первое четырехзначное число нацело
+    делится на 99, а второе на 49.</p>
+    <input value="Get answer" type="submit" class="btn btn-primary">
+    <br><br>
+</form>
+<p>{{result_text}}{{answer}}<br>
+    <a href="/" class="btn btn-link"> Вернуться на главную страницу</a>
+</body>
+</html>

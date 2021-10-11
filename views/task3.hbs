@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Task 3</title>
+</head>
+<body style="margin-left: 10px;margin-right: 10px">
+<form action="/task3/result" method="post">
+    <p class="fw-light">
+    <p class="fw-bold">Задание:</p>
+    118. Переставить и вывести на экран слова
+    заданного предложения в соответствии с ростом
+    доли согласных в этих словах.</p>
+    <input type="text" name="string">
+    <input type="submit" class="btn btn-primary">
+    <br/>
+</form>
+<p>Answer:<br>
+    {{#each result}}
+        Count of consonants: {{this.count}}, String: {{this.string}}  <br>
+    {{/each}}</p> <br>
+<a href="/" class="btn btn-link"> Вернуться на главную страницу</a>
+</body>
+</html>
